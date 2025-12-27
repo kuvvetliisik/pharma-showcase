@@ -1,0 +1,830 @@
+{
+  "products": [
+    {
+      "id": "ca-1",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Avokado 150 mlgng",
+      "description": "Cilde yumuşak ve parlak bir görünüm kazandırır. İçeriğindeki E vitamini sayesinde cildi nemlendirir, cilt bariyerini güçlendirmeye, ince çizgi ve kırışıklık görünümünü azaltmaya yardımcı olur. Soğuk havalarda kuruyan cilde anında bakım yapar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-VAZELIN-AVOKADO-150ml-640x640.jpg.webp",
+      "price": "0",
+      "stock": "100"
+    },
+    {
+      "id": "ca-2",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Pure 150 ml",
+      "description": "Saf formülü ile cilde yoğun nem ve bakım sağlar. İçeriğindeki E vitamini sayesinde cildi besler ve korur. Kuru ciltler için ideal bir bakım ürünüdür. Cildin doğal bariyerini destekler.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-VAZELIN-PURE-150ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-3",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Aloe Vera 90 ml",
+      "description": "Aloe Vera özlü formülü ile cildi yatıştırır ve nemlendirir. Güneş sonrası veya kuruyan ciltler için ferahlatıcı etki sağlar. Cildin elastikiyetini korumasına yardımcı olur.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-VAZELIN-ALOEVERA-90ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-4",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Avokado 90 ml",
+      "description": "Avokado yağı ile zenginleştirilmiş formülü cildi derinlemesine besler. E vitamini içeriğiyle cildin yenilenmesine destek olur. Kuru ve çatlamış cilt görünümünü düzeltmeye yardımcıdır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-VAZELIN-AVOKADO-90ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-5",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Klasik 90 ml",
+      "description": "Yılların güvenilen klasik formülü. Cildi dış etkenlere karşı korur, çatlak oluşumunu engellemeye yardımcı olur ve yoğun nem sağlar. El, dirsek ve topuk gibi kuruyan bölgeler için idealdir.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-VAZELIN-KLASIK-90ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-6",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Aloe Vera Dudak Bakım",
+      "description": "Aloe Vera özü ile dudakları nemlendirir ve yatıştırır. Kurumuş dudakları onarmaya yardımcı olur, gün boyu yumuşaklık sağlar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Lip-care-aloe-vera-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-7",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bubble Gum Dudak Bakım",
+      "description": "Eğlenceli Bubble Gum aroması ile dudak bakımını keyifli hale getirir. Dudakları besler, korur ve pürüzsüz bir görünüm kazandırır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-Bubble-Gum-Lip-Care-8682276606777-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-8",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Cherry Dudak Bakım",
+      "description": "Kiraz aromalı formülü ile dudaklara hafif bir parlaklık ve renk verirken, yoğun nemlendirme sağlar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-Cherry-Lip-Care-8682276606746-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-9",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Dark Honey Dudak Bakım",
+      "description": "Bal özleri ile zenginleştirilmiş yoğun onarıcı bakım. Çatlamış dudakları hızla iyileştirmeye yardımcı olur.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-Dark-Honey-Lip-Care-8682276606968-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-10",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Madberry Dudak Bakım",
+      "description": "Yaban mersini özleri ile dudakları korur ve nemlendirir.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-Madberry-Lip-Care-8682276606760-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-11",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Peach Shine Dudak Bakım",
+      "description": "Şeftali kokusu ve parlaklığı ile dudaklara canlılık katar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-Peach-Shine-Lip-Care-8682276606753-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-12",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Red Honey Dudak Bakım",
+      "description": "Kırmızı bal özleri ile dudakları derinlemesine besler.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-Red-Honey-Lip-Care-8682276606951-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-13",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Strawberry Dudak Bakım",
+      "description": "Çilek aromalı dudak koruyucu, gün boyu nem sağlar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-Strawberry-Lip-Care-8682276606739-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-14",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine D-Panthenol %15 + Prebiyotikli Sprey Krem 200 ml",
+      "description": "Yüksek oranda D-Panthenol ve prebiyotik içeriği ile cildi onarır ve güçlendirir. Sprey formu ile kolayca uygulanır, hızlı emilir.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/D-panthenol-15-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-15",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Gül 90 ml",
+      "description": "Gül özlü klasik vazelin, cildi yumuşatır ve hoş bir koku bırakır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-VAZELIN-GUL-90ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-16",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Klasik Çiçek özlü Krem Tüp 30 ml",
+      "description": "Klasik çiçek özlü formülü ile elleri ve cildi besler, çatlakları onarır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-CICEKOZLU-30ML-TUP-KUTU-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-17",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Klasik Çiçek Özlü Yoğun Bakım Kremi 30 ml",
+      "description": "Teneke kutuda klasik yoğun bakım kremi. Çiçek özleri ile cildi canlandırır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-CICEKOZLU-30ML-TENEKE-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-18",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Klasik Çiçek Özlü Yoğun Bakım Kremi 60 ml",
+      "description": "Orta boy teneke kutuda, yoğun nemlendirme sağlayan klasik krem.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-CICEKOZLU-60ML-TENEKE-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-19",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Klasik Çiçek Özlü Yoğun Bakım Kremi 150 ml",
+      "description": "Büyük boy teneke kutu, tüm aile için yoğun bakım.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-CICEKOZLU-150ML-TENEKE-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-20",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Klasik Çiçek Özlü Yoğun Bakım Kremi 250 ml",
+      "description": "Ekonomik boy teneke kutu, uzun süreli kullanım için ideal.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-CICEKOZLU-250ML-TENEKE-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-21",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Aloe Vera Özlü Besleyici Prebiyotikli Krem 30 ml",
+      "description": "E vitamini ve aloe vera özü ile zenginleştirilmiş formülü cildinizin beslenmesine yardımcı olur. İçerdiği prebiyotik sayesinde cildin doğal florasını korur. Hızlı emilen hafif formül.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ALOEVERA-30ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-22",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Aloe Vera Özlü Yatıştırıcı Besleyici Prebiyotikli Krem 75 ml",
+      "description": "Aloe vera ve prebiyotik içeriği ile cildi yatıştırır ve besler. Tüp formunda pratik kullanım.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ALOEVERA-75ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-23",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Aloe Vera Özlü Yatıştırıcı Besleyici Prebiyotikli Krem 100 ml",
+      "description": "Günlük nem ihtiyacı için aloe vera özlü, prebiyotikli bakım kremi.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ALOEVERA-100ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-24",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Aloe Vera Özlü Yatıştırıcı Besleyici Prebiyotikli Krem 200 ml",
+      "description": "Vücut bakımı için ideal boyda, aloe vera ferahlığı sağlayan krem.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ALOEVERA-200ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-25",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Aloe Vera Özlü Besleyici Krem 300 ml",
+      "description": "Büyük boy avantajıyla tüm vücut için yoğun nem ve bakım. Aloe vera ve prebiyotikler cildin doğal dengesini korumaya yardımcı olur.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ALOEVERA-300ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-26",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Avokado Özlü Nemlendirici Prebiyotikli Krem 30 ml",
+      "description": "Avokado özünün derinlemesine nemlendirici etkisi ve prebiyotiklerin koruyucu gücü bir arada. Cildi yumuşatır ve günlük bakımını yapar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-AVOKADO-30ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-27",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Avokado Özlü Yoğun Nemlendirici Prebiyotikli Krem 75 ml",
+      "description": "Kuru ciltler için avokado yağı ile zenginleştirilmiş yoğun nemlendirici.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-AVOKADO-75ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-28",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Avokado Özlü Yoğun Nemlendirici Prebiyotikli Krem 100 ml",
+      "description": "Cildin nem dengesini koruyan, avokado özlü günlük bakım kremi.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-AVOKADO-100ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-29",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Avokado Özlü Yoğun Nemlendirici Prebiyotikli Krem 200 ml",
+      "description": "Vücut için yoğun nemlendirme, avokado özleri ile besleyici bakım.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-AVOKADO-200ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-30",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Avokado Özlü Nemlendirici Krem 300 ml",
+      "description": "Kuru ciltler için yoğun nemlendirme sağlayan avokado özlü formül. Büyük boyu ile uzun süreli kullanım sunar. Cildi yumuşacık yapar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-AVOKADO-300ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-31",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Gül Özlü Nem Dengeleyici Krem 30 ml",
+      "description": "Gül özünün ferahlatıcı ve dengeleyici etkisiyle cildi canlandırır. Prebiyotik içeriği cilt sağlığını destekler. Paraben ve alkol içermez.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-GUL-30ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-32",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Gül Özlü Nem Dengeleyici Besleyici Prebiyotikli Krem 75 ml",
+      "description": "Gül özleri ile cildi besleyen ve nemlendiren tüp krem.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-GUL-75ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-33",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Gül Özlü Nem Dengeleyici , Besleyici Prebiyotikli Krem 100 ml",
+      "description": "Günlük kullanım için ideal, gül kokulu nemlendirici bakım.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-GUL-100ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-34",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Gül Özlü Nem Dengeleyici Besleyici Prebiyotikli Krem 200 ml",
+      "description": "Vücut için gül özlü, prebiyotikli nemlendirici krem.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-GUL-200ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-35",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Gül Özlü Nem Dengeleyici Krem 300 ml",
+      "description": "Gül bahçelerinin ferahlığını cildinize taşıyan, nem dengesini sağlayan büyük boy bakım kremi. Cildi besler ve canlandırır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-GUL-300ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-36",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Papatya Özlü Besleyici Krem 30 ml",
+      "description": "Papatya özünün yatıştırıcı etkisiyle hassas ciltler için uygundur. Cildi nazikçe nemlendirir ve besler. Günlük kullanıma uygundur.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-PAPATYA-30ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-37",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Papatya Özlü Besleyici Prebiyotikli Krem 75 ml",
+      "description": "Papatya özlü besleyici formül, cildi dış etkenlere karşı korur.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-PAPATYA-75ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-38",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Papatya Özlü Besleyici Prebiyotikli Krem 100 ml",
+      "description": "Hassas ciltler için ideal nemlendirme sağlayan papatya özlü krem.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-PAPATYA-100ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-39",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Papatya Özlü Besleyici Prebiyotikli Krem 200 ml",
+      "description": "Papatya özleriyle cildi rahatlatan ve nemlendiren vücut kremi.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-PAPATYA-200ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-40",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Papatya Özlü Besleyici Prebiyotikli Krem 300 ml",
+      "description": "Büyük boy papatya özlü krem, tüm aile için hassas bakım sağlar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-PAPATYA-300ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-41",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Zeytinyağlı Nemlendirici Krem 30 ml",
+      "description": "Doğal zeytinyağı içeriği ile cildi besler ve pürüzsüzleştirir. Antioksidan etkisiyle cildi dış etkenlere karşı korur. Prebiyotiklerle güçlendirilmiştir.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ZEYTINYAGLI-30ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-42",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Zeytinyağlı Nemlendirici Pürüzsüzleştirici Prebiyotikli Krem 75 ml",
+      "description": "Zeytinyağı özlü formül, cilde kaybettiği nemi geri kazandırır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ZEYTINYAGLI-75ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-43",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Zeytinyağlı Nemlendirici Pürüzsüzleştirici Prebiyotikli Krem 100 ml",
+      "description": "Kuru ciltler için zeytinyağlı yoğun bakım kremi.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ZEYTINYAGLI-100ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-44",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Zeytinyağlı Nemlendirici Pürüzsüzleştirici Prebiyotikli Krem 200 ml",
+      "description": "Vücut için zeytinyağlı besleyici ve nemlendirici bakım.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ZEYTINYAGLI-200ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-45",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Soft Zeytinyağlı Nemlendirici Pürüzsüzleştirici Prebiyotikli Krem 300 ml",
+      "description": "Büyük boy zeytinyağlı krem, cildi pürüzsüzleştirir ve yumuşatır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-SOFT-PREBIYOKTIK-KREM-ZEYTINYAGLI-300ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-46",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Klasik 150 ml",
+      "description": "Büyük boy klasik vazelin, tüm ailenin cilt bakımı için.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-VAZELIN-KLASIK-150ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-47",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Gül 150 ml",
+      "description": "Gül kokulu büyük boy vazelin, cildi nemlendirir ve korur.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-VAZELIN-GUL-150ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-48",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Zeytinyağlı 150 ml",
+      "description": "Cilde yumuşak ve parlak bir görünüm kazandırır. İçeriğindeki E vitamini sayesinde cildi nemlendirir, cilt bariyerini güçlendirmeye, ince çizgi ve kırışıklık görünümünü azaltmaya yardımcı olur. Soğuk havalarda kuruyan cilde anında bakım yapar.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-VAZELIN-ZEYTINYAGLI-150ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-49",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Vazelin Aloe Vera 150 ml",
+      "description": "Aloe vera özlü büyük boy vazelin, cildi yatıştırır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-VAZELIN-ALOEVERA-150ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-50",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Ayak Bakım Kremi 75 ml",
+      "description": "Özel formülü ile ayakları yumuşatır, topuk çatlaklarını onarmaya yardımcı olur.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-AYAKBAKIMKREMI-75ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-51",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine  Ayak Bakım Kremi 150 ml",
+      "description": "Büyük boy ayak bakım kremi, yorgun ve kurumuş ayaklar için yoğun bakım.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-AYAKBAKIMKREMI-150ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-52",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine D-Panthenol %9 Prebiyotikli Sprey Krem",
+      "description": "D-Panthenol %9 ve prebiyotik içeriği ile cildi yatıştırır, onarır ve nemlendirir. Sprey formu ile kolay uygulanır.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2023/01/CA-D-Panthenol-Kopuk-Krem-200ml-YENI-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-53",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Kaş ve Kirpik Bakım Serumu 6 ml",
+      "description": "Besleyici yağlar ile kaş ve kirpikleri güçlendirir, dökülmelere karşı korur.",
+      "category": "Cilt Bakımı",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-KAS-KIRPIK-SERUMU-6ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-54",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Güneş Koruyucu 50 SPF 90 ml",
+      "description": "UVA ve UVB ışınlarına karşı çok yüksek koruma sağlar. Cildi güneş yanıklarından ve erken yaşlanma etkilerinden korur. Suya dayanıklı formül.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-GUNES-KORUYUCU-50SPF-90ML-8682276606036-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-55",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Güneş Koruyucu Baby 50 SPF 90 ml",
+      "description": "Bebeklerin hassas cildi için özel olarak geliştirilmiş 50+ SPF koruma. Parfüm içermez, dermatolojik olarak test edilmiştir. Suya dayanıklıdır.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-BABY-GUNES-KORUYUCU-50SPF-90ML-8682276606265-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-56",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bronzlaştırıcı Güneş Yağı 0 SPF 90 ml",
+      "description": "Havuç ve kakao yağları ile zenginleştirilmiş formülü, cildin doğal ve hızlı bronzlaşmasına yardımcı olur. Yoğun nem sağlar.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-BRONZLASTIRICI-0SPF-90ml-8682276604841-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-57",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Mineral Filter Güneş Koruyucu Baby Hassas Ciltler 50 SPF 50 ml",
+      "description": "%100 mineral filtreli formülü ile bebeklerin ve hassas ciltlerin güneşten korunmasını sağlar.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-MINERAL-FILTER-BABY-GUNES-KORUYUCU-HASSAS-CILTLER-50SPF-50ML-KUTULU-8682276606210-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-58",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Mineral Filter Güneş Koruyucu Karma Yağlı Ciltler 50 SPF 50 ml",
+      "description": "Yağlı ve karma ciltler için özel mineral filtreli koruma. Parlama yapmaz.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-MINERAL-FILTER-GUNES-KORUYUCU-KARMA-YAGLI-CILTLER-50SPF-50ML-KUTULU-8682276606197-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-59",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Mineral Filter Güneş Koruyucu Yaşlanma ve Leke Karşıtı 50 SPF 50 ml",
+      "description": "Leke oluşumunu önlemeye yardımcı mineral filtreli güneş kremi.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-MINERAL-FILTER-GUNES-KORUYUCU-YASLANMA-LEKE-KARSITI-50SPF-50ML-8KUTULU-682276606203-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-60",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Yüz Güneş Koruyucu Ton Dengeleyici ve Aydınlatıcı 50 SPF 50 ml",
+      "description": "Cilt tonunu eşitler, aydınlık bir görünüm verir ve güneşten korur.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-YUZ-GUNES-KORUYUCU-PINK-SHINE-50SPF-50ML-8682276605626-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-61",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Sun Face Yüz Güneş Koruyucu 50SPF 60 ml",
+      "description": "Yüz için özel geliştirilmiş hafif formüllü yüksek koruma.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-SUN-FACE-50SPF-60ML-8682276606029-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-62",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine At the Beach Güneş Koruyucu 30 SPF 150 ml",
+      "description": "Plaj keyfiniz için ideal koruma ve bronzluk dengesi.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-ATTHEBEACH-YETISKIN-150ML-30SPF-8682276603240-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-63",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine At the Beach Güneş Koruyucu 50 SPF 150 ml",
+      "description": "Yoğun güneş altında yüksek koruma sağlayan plaj serisi.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-ATTHEBEACH-YETISKIN-150ML-50SPF-8682276600010-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-64",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine At the Beach Güneş Koruyucu Baby 50 SPF 150 ml",
+      "description": "Bebekler için plajda güvenli koruma sunan sprey form.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-ATTHEBEACH-BABY-50SPF-150ML-8682276600027-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-65",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Sun Güneş Koruyucu 50 SPF 150 ml",
+      "description": "Tüm vücut için etkili koruma sağlayan güneş losyonu.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-SUN-50SPF-150ML-8682276606104-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-66",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Sun Güneş Koruyucu 30 SPF 150 ml",
+      "description": "Orta seviye koruma sağlayan, kolay sürülen güneş kremi.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-SUN-30SPF-150ML-8682276606128-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-67",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Sun Güneş Koruyu Çocuk 50 SPF 150 ml",
+      "description": "Çocukların hareketli yapısına uygun, suya dayanıklı koruma.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-SUN-COCUK-50SPF-150ML-8682276606111-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-68",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Güneş Koruyucu 50 SPF 200 ml",
+      "description": "Büyük boy şişede ekonomik ve etkili güneş koruması.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-GUNES-KORUYUCU-50SPF-200ML-8682276606036-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-69",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Güneş Koruyucu Baby 50 SPF 200 ml",
+      "description": "Bebekler için büyük boy güneş koruyucu losyon.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-BABY-GUNES-KORUYUCU-50SPF-200ML-8682276606050-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-70",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Güneş Koruyucu 30 SPF 200 ml",
+      "description": "Büyük boy 30 SPF güneş kremi, günlük kullanım için.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-GUNES-KORUYUCU-30SPF-200ML-8682276606043-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-71",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Yüz Güneş Koruyucu Kuru ve Normal Ciltler 50 SPF 50 ml",
+      "description": "Kuru ve normal ciltler için nemlendirici etkili yüz güneş kremi.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-YUZ-GUNES-KORUYUCU-KURU-NORMAL-50SPF-50ML-8682276606067-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-72",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Yüz Güneş Koruyucu Karma ve Yağlı Ciltler 50 SPF 50 ml",
+      "description": "Parlamayı kontrol altına alan, yağsız yüz güneş kremi.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-YUZ-GUNES-KORUYUCU-KARMA-YAGLI-50SPF-50ML-8682276606074-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-73",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Yüz Güneş Koruyucu Yaşlanma ve Leke karşıtı 50 SPF 50 ml",
+      "description": "Anti-aging etkili, leke karşıtı özel yüz koruması.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-YUZ-GUNES-KORUYUCU-YASLANMA-VE-LEKE-KARSITI-50SPF-50ML-8682276606081-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-74",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bronzlaştırıcı Güneş Yağı 0 SPF 200 ml",
+      "description": "Büyük boy bronzlaştırıcı yağ, mükemmel bronzluk için.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-BRONZLASTIRICI-GUNES-YAGI-0SPF-200ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-75",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bronzlaştırıcı Güneş Yağı 8 SPF 200 ml",
+      "description": "Düşük koruma faktörlü bronzlaştırıcı yağ, güvenli bronzlaşma sağlar.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-BRONZLASTIRICI-GUNES-YAGI-8SPF-200ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-76",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Brozlaştırıcı Havuç Yağı 100 ml 0 SPF",
+      "description": "Doğal havuç yağı özleri ile hızlı ve kalıcı bronzluk.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-BRONZLASTIRICI-GUNES-KREMI-HAVUC-YAGLI-0SPF-100ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-77",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bronzlaştırıcı Kakao Yağı 100 ml 0 SPF",
+      "description": "E vitamini, Panthenol ve Aloe vera ile zenginleştirilmiş formülü cildinizin nemlenmesine ve beslenmesine yardımcı olur. İçeriğindeki karoten ile kakao yağı ile düzgün bronzlaşmaya yardımcı olur.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-BRONZLASTIRICI-GUNES-KREMI-KAKAO-YAGLI-0SPF-100ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-78",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine %100 Doğal Kaynaklı Aloe Vera Nemlendirici & Rahatlatıcı Jel 200 ml",
+      "description": "Güneş sonrası cildi ferahlatan ve yatıştıran doğal aloe vera jeli.",
+      "category": "Güneş Ürünleri",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-ALOEVERA-RANAHTLATICI-JEL-200ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-79",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bebek Kolonyası Cream 150 ml",
+      "description": "Bebeklerin hassas cildine uygun, yumuşak ve pudralı kokusuyla ferahlık verir. Alkol oranı düşüktür, cildi tahriş etmez.",
+      "category": "Bebek & Anne",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Bebek-Kolonyasi-Cream-150-ml-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-80",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bebek Kolonyası Special 150 ml",
+      "description": "Özel formülü ile bebeksi kokuların en saf halini sunar. Hijyen ve ferahlık sağlar.",
+      "category": "Bebek & Anne",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-SPECIAL-BEBEK-KOLONYA-150ML-1-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-81",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bebek Kolonyası Powder 150 ml",
+      "description": "Pudra kokulu bebek kolonyası, taze ve temiz bir his bırakır.",
+      "category": "Bebek & Anne",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-POWDER-BEBEK-KOLONYA-150ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-82",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bebek Kolonyası Pure 150 ml",
+      "description": "Saf ve doğal kokusu ile bebeğinizin cildine tazelik verir.",
+      "category": "Bebek & Anne",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-PURE-BEBEK-KOLONYA-150ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-83",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bebek Kolonyası Intensity 150 ml",
+      "description": "Daha yoğun kokusu ile uzun süre kalıcı ferahlık sağlar.",
+      "category": "Bebek & Anne",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/08/CA-INTENCITY-BEBEK-KOLONYA-150ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-84",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bebek Kolonyası Magic 150 ml",
+      "description": "Büyüleyici kokusu ile bebeğiniz ve sizin için özel bir ferahlık.",
+      "category": "Bebek & Anne",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-MAGIC-BEBEK-KOLONYA-150ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-85",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Bebek Kolonyası Lucky 150 ml",
+      "description": "Şans getiren taze kokusu ile gün boyu ferahlık.",
+      "category": "Bebek & Anne",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/CA-LUCKY-BEBEK-KOLONYA-150ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-86",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Limon Kolonyası Sprey 100 ml",
+      "description": "Klasik limon ferahlığını pratik sprey şişede sunar. 80 derece alkol içeriği ile hijyen sağlar.",
+      "category": "Kolonyalar",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-KOLONYA-100ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-87",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Limon Kolonyası 200 ml",
+      "description": "200 ml cam şişede geleneksel Türk limon kolonyası.",
+      "category": "Kolonyalar",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-KOLONYA-200ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-88",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Limon Kolonyası 400 ml",
+      "description": "400 ml ekonomik boy, misafirleriniz ve günlük kullanım için ideal.",
+      "category": "Kolonyalar",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/CA-KOLONYA-400ML-640x640.jpg.webp"
+    },
+    {
+      "id": "ca-89",
+      "brandId": "br-cire",
+      "name": "Cire Aseptine Limon Kolonyası 1000 ml",
+      "description": "1 litrelik dev boy, uzun süreli ferahlık ve hijyen.",
+      "category": "Kolonyalar",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/03/gorsel-yok-640x640.jpg.webp"
+    },
+    {
+      "id": "pr-1",
+      "brandId": "br-1",
+      "name": "Nemlendirici Bakım Kremi",
+      "description": "Kuru ve hassas ciltler için yoğun nemlendirici.",
+      "category": "Cilt Bakımı",
+      "image": "https://plus.unsplash.com/premium_photo-1678198758839-4d6d6787834a?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": "pr-2",
+      "brandId": "br-1",
+      "name": "Güneş Koruyucu Losyon",
+      "description": "SPF 50+ koruma faktörlü güneş kremi.",
+      "category": "Güneş Ürünleri",
+      "image": "https://images.unsplash.com/photo-1556228720-1957be83f731?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": "pr-3",
+      "brandId": "br-2",
+      "name": "Multivitamin Komplex",
+      "description": "Enerji ve bağışıklık için günlük destek.",
+      "category": "Vitaminler",
+      "image": "https://images.unsplash.com/photo-1574635537920-d80589553658?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": "98025952-2d6f-4bd8-8cf1-35a0360cf3c8",
+      "name": "anneednoeal",
+      "brandId": "br-4",
+      "category": "dakljns",
+      "description": "djşdasklşadsjooaddao",
+      "image": "https://placehold.co/600x400?text=No+Image",
+      "price": "",
+      "stock": ""
+    },
+    {
+      "id": "eb5cbdcc-5824-4224-b980-1078ee5d233a",
+      "name": "snklald",
+      "brandId": "br-3",
+      "category": "kmlscmlsosf",
+      "description": "mlşcascsllcsacslslm",
+      "image": "https://placehold.co/600x400?text=No+Image",
+      "price": "",
+      "stock": ""
+    },
+    {
+      "id": "ac82030a-725b-4295-aba1-0b321c1b7466",
+      "name": "hrrrrrrrrrrrr",
+      "brandId": "br-4",
+      "category": "hfggggggggg",
+      "description": "htttttttttttttttttt",
+      "image": "https://placehold.co/600x400?text=No+Image",
+      "price": "",
+      "stock": ""
+    },
+    {
+      "id": "3908168f-d8fe-40ee-884c-4c7e88eb05c1",
+      "name": "sklnmadk",
+      "brandId": "br-3",
+      "category": "dnklakl",
+      "description": "kdnaklnsssssssss",
+      "image": "https://placehold.co/600x400?text=No+Image",
+      "price": "",
+      "stock": ""
+    },
+    {
+      "id": "f1d54144-b319-4862-9a99-4eec80e447d0",
+      "name": "kldad",
+      "brandId": "br-4",
+      "category": "dadadada",
+      "description": "dankllllllldvdvd",
+      "image": "https://placehold.co/600x400?text=No+Image",
+      "price": "0",
+      "stock": "100"
+    }
+  ],
+  "brands": [
+    {
+      "id": "br-cire",
+      "name": "Cire Aseptine",
+      "description": "100 yıla yakın tecrübesiyle cildinizin koruyucu kalkanı.",
+      "logo": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/cire-aseptine-yeni-logo-640x640.jpg"
+    },
+    {
+      "id": "br-1",
+      "name": "MiaDerm",
+      "description": "Cilt sağlığı için dermatolojik çözümler.",
+      "logo": "/images/brands/miaderm-logo.png"
+    },
+    {
+      "id": "br-2",
+      "name": "VitaPlus",
+      "description": "Günlük vitamin ve takviye ihtiyaçlarınız.",
+      "logo": "/images/brands/vitaplus-logo.png"
+    },
+    {
+      "id": "br-3",
+      "name": "MediCare",
+      "description": "Profesyonel medikal ürünler.",
+      "logo": "/images/brands/medicare-logo.png"
+    },
+    {
+      "id": "br-4",
+      "name": "PharmaNature",
+      "description": "Doğal içerikli ilaç ve takviyeler.",
+      "logo": "/images/brands/pharmanature-logo.png"
+    },
+    {
+      "id": "b1766875029354",
+      "name": "sklnmadk",
+      "description": "asdalmkskklkldakkladlk",
+      "logo": "https://placehold.co/200x100?text=Brand+Logo"
+    }
+  ]
+}
