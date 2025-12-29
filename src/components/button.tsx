@@ -5,25 +5,25 @@ import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-95 duration-200",
+    "inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] duration-200",
     {
         variants: {
             variant: {
-                default: "bg-primary-600 text-white hover:bg-primary-700 shadow-md hover:shadow-lg",
+                default: "bg-gradient-to-r from-primary-600 to-primary-700 text-white hover:from-primary-700 hover:to-primary-800 shadow-lg shadow-primary-500/20 hover:shadow-primary-500/30",
                 destructive:
-                    "bg-red-500 text-slate-50 hover:bg-red-900/90",
+                    "bg-red-500 text-white hover:bg-red-600 shadow-md",
                 outline:
-                    "border border-slate-200 bg-white hover:bg-slate-100 hover:text-slate-900",
+                    "border-2 border-primary-200 bg-white text-primary-700 hover:bg-primary-50 hover:border-primary-300",
                 secondary:
-                    "bg-secondary-500 text-white hover:bg-secondary-600 shadow-sm",
-                ghost: "hover:bg-slate-100 hover:text-slate-900",
+                    "bg-gradient-to-r from-secondary-500 to-secondary-600 text-white hover:from-secondary-600 hover:to-secondary-700 shadow-lg shadow-secondary-500/20",
+                ghost: "hover:bg-primary-50 text-primary-700",
                 link: "text-primary-600 underline-offset-4 hover:underline",
             },
             size: {
-                default: "h-10 px-4 py-2",
-                sm: "h-9 rounded-md px-3",
-                lg: "h-12 rounded-md px-8 text-base",
-                icon: "h-10 w-10",
+                default: "h-11 px-5 py-2.5",
+                sm: "h-9 rounded-lg px-4",
+                lg: "h-13 rounded-xl px-8 text-base",
+                icon: "h-11 w-11",
             },
         },
         defaultVariants: {

@@ -10,7 +10,8 @@ import {
     MessageSquare,
     Settings,
     LogOut,
-    Home
+    Home,
+    Images
 } from "lucide-react";
 
 const menuItems = [
@@ -18,6 +19,11 @@ const menuItems = [
         title: "Dashboard",
         href: "/admin",
         icon: LayoutDashboard
+    },
+    {
+        title: "Slider",
+        href: "/admin/sliders",
+        icon: Images
     },
     {
         title: "Ürünler",

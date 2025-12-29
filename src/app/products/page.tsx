@@ -1,8 +1,18 @@
 import { Suspense } from "react";
 import { getDb } from "@/lib/db";
 import { ProductsClient } from "@/components/products-client";
+import { Metadata } from "next";
 
 export const dynamic = 'force-dynamic';
+
+export const metadata: Metadata = {
+    title: "Ürünlerimiz - Ecza Deposu",
+    description: "Cilt bakımı, güneş ürünleri, vitaminler ve daha fazlası. 1000'den fazla ürün çeşidimizi keşfedin.",
+    openGraph: {
+        title: "Ürünlerimiz - Ecza Deposu",
+        description: "Cilt bakımı, güneş ürünleri, vitaminler ve daha fazlası.",
+    }
+};
 
 export default async function ProductsPage() {
     // Direct DB access (Server Component)

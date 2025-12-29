@@ -1,14 +1,41 @@
 import { getDb } from "@/lib/db";
-import { brands } from "@/lib/data";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/button";
-import { ArrowLeft, Check, ShieldCheck, Truck } from "lucide-react";
+import { ArrowLeft, Check, ShieldCheck, Truck, Home, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ProductImage } from "@/components/product-image";
+import { ShareButton } from "@/components/share-button";
+import { Metadata } from "next";
 
 export const dynamic = 'force-dynamic';
 
 type RouteContext = { params: Promise<{ id: string }> };
+
+// Dynamic SEO metadata
+export async function generateMetadata({ params }: RouteContext): Promise<Metadata> {
+    const { id } = await params;
+    const db = await getDb();
+    const product = db.products.find((p) => p.id === id);
+
+    if (!product) {
+        return {
+            title: "Ürün Bulunamadı - Ecza Deposu",
+        };
+    }
+
+    const brand = db.brands.find((b) => b.id === product.brandId);
+
+    return {
+        title: `${product.name} - ${brand?.name || "Ecza Deposu"}`,
+        description: product.description.slice(0, 160),
+        openGraph: {
+            title: product.name,
+            description: product.description.slice(0, 160),
+            images: product.image ? [product.image] : undefined,
+        },
+    };
+}
 
 export default async function ProductDetailPage({ params }: RouteContext) {
     const { id } = await params;
@@ -20,7 +47,8 @@ export default async function ProductDetailPage({ params }: RouteContext) {
         notFound();
     }
 
-    const brand = brands.find((b) => b.id === product.brandId);
+    // Get brand from database instead of static data
+    const brand = db.brands.find((b) => b.id === product.brandId);
     const similarProducts = db.products
         .filter((p) => p.category === product.category && p.id !== product.id)
         .slice(0, 4);
@@ -29,33 +57,33 @@ export default async function ProductDetailPage({ params }: RouteContext) {
         <div className="min-h-screen bg-slate-50 py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                {/* Breadcrumb / Back */}
-                <div className="mb-8">
-                    <Link href="/products" className="inline-flex items-center text-slate-500 hover:text-slate-900 transition-colors">
-                        <ArrowLeft size={18} className="mr-2" /> Ürünlere Dön
+                {/* Breadcrumb */}
+                <nav className="flex items-center gap-2 text-sm text-slate-500 mb-8 flex-wrap">
+                    <Link href="/" className="hover:text-primary-600 transition-colors flex items-center gap-1">
+                        <Home size={14} />
+                        Ana Sayfa
                     </Link>
-                </div>
+                    <ChevronRight size={14} />
+                    <Link href="/products" className="hover:text-primary-600 transition-colors">
+                        Ürünler
+                    </Link>
+                    <ChevronRight size={14} />
+                    <Link href={`/products?category=${encodeURIComponent(product.category)}`} className="hover:text-primary-600 transition-colors">
+                        {product.category}
+                    </Link>
+                    <ChevronRight size={14} />
+                    <span className="text-slate-900 font-medium truncate max-w-[200px]">{product.name}</span>
+                </nav>
 
                 <div className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden mb-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12">
-                        {/* Image Section */}
+                        {/* Image Section with Lightbox */}
                         <div className="bg-slate-50 p-12 flex items-center justify-center min-h-[400px] border-b md:border-b-0 md:border-r border-slate-100">
-                            <div className="w-80 h-80 bg-white rounded-2xl shadow-lg flex items-center justify-center relative overflow-hidden">
-                                <div className="absolute top-4 left-4 bg-primary-100 text-primary-700 text-xs font-bold px-2 py-1 rounded z-10">
-                                    {product.category}
-                                </div>
-                                {product.image ? (
-                                    <Image
-                                        src={product.image}
-                                        alt={product.name}
-                                        fill
-                                        className="object-cover"
-                                        sizes="320px"
-                                    />
-                                ) : (
-                                    <span className="text-slate-300 font-medium text-xl">{product.name} Görseli</span>
-                                )}
-                            </div>
+                            <ProductImage
+                                src={product.image || ""}
+                                alt={product.name}
+                                category={product.category}
+                            />
                         </div>
 
                         {/* Info Section */}
@@ -63,7 +91,14 @@ export default async function ProductDetailPage({ params }: RouteContext) {
                             <div className="mb-6">
                                 {brand && (
                                     <Link href={`/brands/${brand.id}`} className="inline-flex items-center gap-2 mb-2 group">
-                                        <span className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-400 group-hover:bg-primary-50 group-hover:text-primary-600 transition-colors">B</span>
+                                        <span className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-400 group-hover:bg-primary-50 group-hover:text-primary-600 transition-colors overflow-hidden">
+                                            {brand.logo ? (
+                                                // eslint-disable-next-line @next/next/no-img-element
+                                                <img src={brand.logo} alt={brand.name} className="w-full h-full object-cover" />
+                                            ) : (
+                                                "B"
+                                            )}
+                                        </span>
                                         <span className="text-slate-500 font-medium group-hover:text-primary-600 transition-colors">{brand.name}</span>
                                     </Link>
                                 )}
@@ -92,10 +127,11 @@ export default async function ProductDetailPage({ params }: RouteContext) {
                                 </div>
                             </div>
 
-                            <div className="flex gap-4 mt-auto">
+                            <div className="flex gap-3 mt-auto">
                                 <Link href="/contact" className="flex-1">
                                     <Button size="lg" className="w-full">Detaylı Bilgi Al</Button>
                                 </Link>
+                                <ShareButton title={product.name} text={product.description} />
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/sections/hero";
 import { BrandsSection } from "@/components/sections/brands-section";
 import { ProductsSection } from "@/components/sections/products-section";
 import { getDb } from "@/lib/db";
+import Link from "next/link";
 
 export const dynamic = 'force-dynamic';
 
@@ -24,9 +25,9 @@ export default async function Home() {
           <p className="text-primary-100 text-lg mb-8">
             Geniş ürün yelpazemiz ve avantajlı koşullarımızdan yararlanmak için hemen iletişime geçin.
           </p>
-          <button className="bg-white text-primary-600 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-primary-50 transition-colors">
+          <Link href="/contact" className="inline-block bg-white text-primary-600 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-primary-50 transition-colors">
             İletişim Formunu Doldur
-          </button>
+          </Link>
         </div>
       </section>
     </div>

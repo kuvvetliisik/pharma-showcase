@@ -1,23 +1,25 @@
-"use client";
-
-import { use } from "react";
-import { brands, products } from "@/lib/data";
+import { getDb } from "@/lib/db";
 import { notFound } from "next/navigation";
-import { motion } from "framer-motion";
-import { ArrowLeft, Plus } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/button";
 
-export default function BrandDetailPage({ params }: { params: Promise<{ id: string }> }) {
-    const resolvedParams = use(params);
-    const brand = brands.find((b) => b.id === resolvedParams.id);
+export const dynamic = 'force-dynamic';
+
+type RouteContext = { params: Promise<{ id: string }> };
+
+export default async function BrandDetailPage({ params }: RouteContext) {
+    const { id } = await params;
+    const db = await getDb();
+
+    const brand = db.brands.find((b) => b.id === id);
 
     if (!brand) {
         notFound();
     }
 
-    const brandProducts = products.filter((p) => p.brandId === brand.id);
+    const brandProducts = db.products.filter((p) => p.brandId === brand.id);
 
     return (
         <div className="min-h-screen bg-slate-50 pb-20">
@@ -29,8 +31,16 @@ export default function BrandDetailPage({ params }: { params: Promise<{ id: stri
                     </Link>
 
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-                        <div className="w-32 h-32 bg-slate-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                            <span className="font-bold text-slate-400">{brand.name}</span>
+                        <div className="w-32 h-32 bg-slate-100 rounded-2xl flex items-center justify-center flex-shrink-0 overflow-hidden p-2 border border-slate-200">
+                            {brand.logo ? (
+                                <img
+                                    src={brand.logo}
+                                    alt={brand.name}
+                                    className="max-w-full max-h-full object-contain"
+                                />
+                            ) : (
+                                <span className="font-bold text-slate-400">{brand.name}</span>
+                            )}
                         </div>
                         <div className="text-center md:text-left">
                             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{brand.name}</h1>
@@ -46,12 +56,9 @@ export default function BrandDetailPage({ params }: { params: Promise<{ id: stri
 
                 {brandProducts.length > 0 ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {brandProducts.map((product, index) => (
-                            <motion.div
+                        {brandProducts.map((product) => (
+                            <div
                                 key={product.id}
-                                initial={{ opacity: 0, scale: 0.95 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ delay: index * 0.1 }}
                                 className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all group"
                             >
                                 <div className="aspect-square bg-slate-50 relative overflow-hidden flex items-center justify-center">
@@ -61,6 +68,7 @@ export default function BrandDetailPage({ params }: { params: Promise<{ id: stri
                                             alt={product.name}
                                             fill
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
+                                            sizes="(max-width: 768px) 100vw, 25vw"
                                         />
                                     ) : (
                                         <span className="text-slate-400">Ürün Görseli</span>
@@ -77,7 +85,7 @@ export default function BrandDetailPage({ params }: { params: Promise<{ id: stri
                                         <Button variant="outline" size="sm" className="w-full">İncele</Button>
                                     </Link>
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 ) : (

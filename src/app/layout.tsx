@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
 import { Toaster } from "sonner";
+import { LayoutWrapper } from "@/components/layout-wrapper";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Örnek Ecza Deposu | Güvenilir Tedarikçiniz",
-  description: "Markalarımız ve ürünlerimizle hizmetinizdeyiz.",
+  title: "Farmavis | Sağlık & Kozmetik Ürünleri",
+  description: "Sağlık ve kozmetik sektöründe güvenilir çözüm ortağınız. Foot Doctor, Cire Aseptine ve daha fazla marka ile hizmetinizdeyiz.",
 };
 
 export default function RootLayout({
@@ -21,11 +20,9 @@ export default function RootLayout({
   return (
     <html lang="tr" suppressHydrationWarning>
       <body className={cn(inter.variable, "font-sans antialiased bg-slate-50 text-slate-900")}>
-        <Navbar />
-        <main className="min-h-screen pt-20">
+        <LayoutWrapper>
           {children}
-        </main>
-        <Footer />
+        </LayoutWrapper>
         <Toaster position="top-center" richColors />
       </body>
     </html>

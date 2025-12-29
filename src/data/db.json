@@ -739,54 +739,432 @@
       "image": "https://images.unsplash.com/photo-1574635537920-d80589553658?q=80&w=600&auto=format&fit=crop"
     },
     {
-      "id": "98025952-2d6f-4bd8-8cf1-35a0360cf3c8",
-      "name": "anneednoeal",
-      "brandId": "br-4",
-      "category": "dakljns",
-      "description": "djşdasklşadsjooaddao",
-      "image": "https://placehold.co/600x400?text=No+Image",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "eb5cbdcc-5824-4224-b980-1078ee5d233a",
-      "name": "snklald",
-      "brandId": "br-3",
-      "category": "kmlscmlsosf",
-      "description": "mlşcascsllcsacslslm",
-      "image": "https://placehold.co/600x400?text=No+Image",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "ac82030a-725b-4295-aba1-0b321c1b7466",
-      "name": "hrrrrrrrrrrrr",
+      "id": "82d6cb10-09c8-4565-a81b-cde0c6a17071",
+      "name": "djooowdw",
       "brandId": "br-4",
       "category": "hfggggggggg",
-      "description": "htttttttttttttttttt",
-      "image": "https://placehold.co/600x400?text=No+Image",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "3908168f-d8fe-40ee-884c-4c7e88eb05c1",
-      "name": "sklnmadk",
-      "brandId": "br-3",
-      "category": "dnklakl",
-      "description": "kdnaklnsssssssss",
-      "image": "https://placehold.co/600x400?text=No+Image",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "f1d54144-b319-4862-9a99-4eec80e447d0",
-      "name": "kldad",
-      "brandId": "br-4",
-      "category": "dadadada",
-      "description": "dankllllllldvdvd",
-      "image": "https://placehold.co/600x400?text=No+Image",
+      "description": "lkjhgfgbbıuuuıbıu",
+      "image": "/uploads/products/1766916556834-bebedor.png",
       "price": "0",
       "stock": "100"
+    },
+    {
+      "id": "fd-001",
+      "name": "Foot Doctor Kavisli Yüzey Paslanmaz Çelik Ayak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Paslanmaz çelik, kavisli yüzeyli profesyonel ayak törpüsü. Sertleşmiş derileri ve nasırları nazikçe temizler.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0035-Kavisli-Yuzey-Paslanmaz-Celik-Ayak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-002",
+      "name": "Foot Doctor Kesilebilir Nasır Flasteri",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Kesilebilir tasarımıyla her ayağa uyum sağlayan nasır flasteri. Nasır ve sertleşmiş deri bölgelerini korur.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/Foot-DR-Kesilebilir-Nasir-Flasteri-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-003",
+      "name": "Foot Doctor Ayak Koruyucu Yarım Ped",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Ayak tabanının ön kısmını koruyan yarım ped. Yürürken rahatlık sağlar ve sürtünmeyi azaltır.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0001-Yayak-Koruyucu-Yarim-Ped-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-004",
+      "name": "Foot Doctor Petekli Ön Ayak Pedi",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Petekli yapısıyla hava sirkülasyonu sağlayan ön ayak pedi. Uzun süre ayakta kalanlara idealdir.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0002-Petekli-On-Ayak-Pedi-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-005",
+      "name": "Foot Doctor Tek Delikli Parmak Bunyon Koruyucu",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Bunyon ağrılarını hafifleten tek delikli parmak koruyucu. Yumuşak jel yapısıyla konfor sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0003-Tek-Delikli-Parmak-Bunyon-Koruyucu-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-006",
+      "name": "Foot Doctor Beş Delikli Parmak Ayıracı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Tüm parmakları ayıran beş delikli silikon ayırıcı. Parmak arası sürtünmeleri önler.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0004-Bes-Delikli-Parmak-Ayiraci-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-007",
+      "name": "Foot Doctor Tek Delikli Parmak Ayıracı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Başparmak için özel tasarlanmış tek delikli parmak ayıracı. Bunyon ve çarpık parmak sorunlarına yardımcı.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0005-Tek-Delikli-Parmak-Ayirici-640x670.jpg.webp"
+    },
+    {
+      "id": "fd-008",
+      "name": "Foot Doctor Yan Koruyuculu Çift Delikli Parmak Ayırıcı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Yan koruyucu özellikli çift delikli parmak ayırıcı. Ekstra koruma ve konfor sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0006-Yan-Koruyuculu-Cift-Delikli-Parmak-Ayirici-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-009",
+      "name": "Foot Doctor Parmak Arası Makara",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Parmak arası sürtünmeleri engelleyen silikon makara. Esnek yapısıyla her parmağa uyum sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0008-Parmak-Arasi-Makarasi-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-010",
+      "name": "Foot Doctor Ayak Ucu Koruyucu Kılıf",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Ayak uçlarını koruyan silikon kılıf. Tırnak batmasını ve sürtünmeyi önler.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0009-Ayak-Ucu-Koruyucu-Kilif-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-011",
+      "name": "Foot Doctor Topuk Nemlendirici Kılıf",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Topukları nemlendiren ve koruyan özel jel kılıf. Kuru ve çatlak topuklara yardımcı olur.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/FD.0010-Topuk-Nemlendirici-Kilif-8684201010284-640x670.jpg.webp"
+    },
+    {
+      "id": "fd-012",
+      "name": "Foot Doctor Nemlendirici Topuk Çorabı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "SEBS silika jel ve pamuk yünü içerir. Hafif ve konforlu yürüyüşler sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/FD.0011-Nemlendirici-Topuk-Corabi-8684201010314-640x670.jpg.webp"
+    },
+    {
+      "id": "fd-013",
+      "name": "Foot Doctor Nemlendiricili Jel Çorap",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Tam ayağı saran nemlendiricili jel çorap. Derin nemlendirme ve bakım sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0012-Nemlendirici-Jel-Corap-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-014",
+      "name": "Foot Doctor Ayak Toparlayıcı Çorap",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Ayak kaslarını destekleyen toparlayıcı çorap. Yorgunluğu azaltır ve kan dolaşımını destekler.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0013-Ayak-Toparlayici-Corap-640x670.jpg.webp"
+    },
+    {
+      "id": "fd-015",
+      "name": "Foot Doctor Beş Delikli Nefes Alır Ayak Pedi",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Hava geçirgen yapısıyla nefes alır ayak pedi. Terlemeyi önler ve ferahlık sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0014-Bes-Delikli-Nefes-Alir-Ayak-Pedi-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-016",
+      "name": "Foot Doctor Bunyon Parmak Seperatörü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Bunyon rahatsızlıklarına özel parmak ayırıcı. Doğru parmak pozisyonunu destekler.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0015-Bulyon-Yumru-Parmak-Separetoru-640x670.jpg.webp"
+    },
+    {
+      "id": "fd-017",
+      "name": "Foot Doctor Ayak Kemeri Destek Çorabı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Ayak kemerini destekleyen özel çorap. Düztaban ve ayak yorgunluğuna yardımcı olur.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0016-Ayak-Kemeri-Arch-Destek-Corbi-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-018",
+      "name": "Foot Doctor Üç Delikli Parmak Kavrayıcı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Üç parmağı birden kavrayarak destekleyen silikon ürün. Parmak sorunlarına yardımcı.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0017-Uc-Delikli-Parmak-Kavrayici-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-019",
+      "name": "Foot Doctor Ayak Koruma Pedi",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Genel ayak koruma sağlayan çok amaçlı ped. Ayakkabı içinde konfor artırır.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0018-Ayak-Koruma-Pedi-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-020",
+      "name": "Foot Doctor Terlik Kaydırmazı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Terlik ve sandaletlerde kayma önleyici ped. Güvenli adımlar için idealdir.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0019-Terlik-Kaydirmazi-640x670.jpg.webp"
+    },
+    {
+      "id": "fd-021",
+      "name": "Foot Doctor Kesilebilir Nasır Koruyucu",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "İhtiyaca göre kesilebilen nasır koruyucu. Esnek yapısıyla her ayağa uyum sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0022-Kesilebilir-Nasir-Koruyucu-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-022",
+      "name": "Foot Doctor Topuk Koruyucu Jel Band Dörtlü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Dörtlü paket topuk koruyucu jel bandaj. Uzun süreli koruma ve konfor sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0024-Topuk-Koruyucu-Jel-Band-4lu-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-023",
+      "name": "Foot Doctor Topuk Koruyucu Jel Band İkili",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "İkili paket topuk koruyucu jel bandaj. Ayakkabı vurmalarına karşı etkili koruma.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0025-Topuk-Koruyucu-Jel-Band-2li-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-024",
+      "name": "Foot Doctor Nasır Koruyucu Ped",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Nasır bölgelerini koruyan özel ped. Ağrıyı hafifletir ve sürtünmeyi azaltır.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0027-Nasir-Koruyucu-Ped-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-025",
+      "name": "Foot Doctor Pomza Taşı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Nasırları ve sertleşmiş deriyi gidermek için etkili doğal pomza taşı.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0030-Pomza-Tasi-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-026",
+      "name": "Foot Doctor Kavisli Dev Ayak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Geniş yüzey alanı ile hızlı ve etkili törpüleme sağlayan dev ayak törpüsü.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0031-Kavisli-Dev-Ayak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-027",
+      "name": "Foot Doctor Çift Taraflı Ayak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "İki farklı yüzey dokusuna sahip çift taraflı törpü. Hem sert hem yumuşak deri için uygundur.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0032-Cift-Tarafli-Ayak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-028",
+      "name": "Foot Doctor Geniş Yüzeyli Ayak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Geniş yüzey alanına sahip ergonomik ayak törpüsü. Hızlı ve etkili sonuç.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0033-Genis-Yuzeyli-Ayak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-029",
+      "name": "Foot Doctor Kürek Tipi Ayak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Kürek şeklinde tasarlanmış kullanışlı ayak törpüsü. Kolay kavrama ve kullanım.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0034-Kurek-Tipi-Ayak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-030",
+      "name": "Foot Doctor Üçgen Yüzey Paslanmaz Çelik Ayak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Üçgen yüzey tasarımlı paslanmaz çelik törpü. Zor bölgelere kolay erişim sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0036-Ucgen-Yuzey-Paslanmaz-Celik-Ayak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-031",
+      "name": "Foot Doctor Çift Taraflı Paslanmaz Çelik Ayak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Paslanmaz çelik, çift taraflı profesyonel törpü. Dayanıklı ve hijyenik.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0037-Cift-Tarafli-Paslanmaz-Celik-Dalga-Ayak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-032",
+      "name": "Foot Doctor Paslanmaz Çelik Dalga Desenli Ayak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Dalga desenli paslanmaz çelik törpü. Estetik görünüm ve etkili performans.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0038-Paslanmaz-Celik-Desenli-Ayak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-033",
+      "name": "Foot Doctor 2'si 1 Arada Pomza Taşı ve Yumuşak Fırça",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Pomza taşı ve yumuşak fırça bir arada. Temizlik ve bakım tek üründe.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0039-2si-1-Arada-Pomza-Tasi-ve-Yumusak-Firca-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-034",
+      "name": "Foot Doctor 4'ü 1 Arada Ayak Pedikür Seti",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Dört farklı fonksiyona sahip komple pedikür seti. Profesyonel ayak bakımı evde.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0040-4u-1-Arada-Ayak-Pedikur-Seti-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-035",
+      "name": "Foot Doctor 2'si 1 Arada Pomza Taşı ve Naylon Fırça",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Pomza taşı ve naylon fırça kombinasyonu. Derinlemesine temizlik sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0041-2si-1-Arada-Pomza-Tasi-ve-Naylon-Firca-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-036",
+      "name": "Foot Doctor 3 Kenarlı Renkli Nail Art Parlatıcı Zımpara Bloğu",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Üç farklı yüzeye sahip tırnak parlatıcı blok. Profesyonel tırnak bakımı için ideal.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0042-3-Kenarli-Renkli-Nail-Art-Parlatici-Zimpara-Blogu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-037",
+      "name": "Foot Doctor Esnek ve Yumuşak Pedikür Parmak Ayracı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Pedikür sırasında parmakları ayıran esnek ve yumuşak ayırıcı. Oje uygulaması için ideal.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0043-Esnek-ve-Yumusak-Pedikur-Parmak-Ayraci-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-038",
+      "name": "Foot Doctor Doğal Siyah Pomza Taşı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Volkanik kayalardan elde edilen doğal siyah pomza taşı. Etkili ve doğal bakım.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0044-Dogal-Siyah-Pomza-Tasi-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-039",
+      "name": "Foot Doctor 2'si 1 Arada Pomza Taşı ve Fırçası",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Pomza ve fırça bir arada. Pratik kullanım ve etkili temizlik.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0045-2si-1-Arada-Pomza-Tasi-ve-Fircasi-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-040",
+      "name": "Foot Doctor Kaymaz Tutamaçlı Çift Taraflı Doğal Pomza Taşı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Kaymaz tutamaklı ergonomik pomza taşı. Güvenli ve kolay kullanım.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0046-Kaymaz-Tutamacli-Cift-Tarafli-Dogal-Pomza-Tasi-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-041",
+      "name": "Foot Doctor 2'si 1 Arada Pomza Taşı ve Fırçası Model 2",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Farklı tasarımda pomza ve fırça kombinasyonu. Alternatif model.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0047-2si-1-Arada-Pomza-Tasi-ve-Fircasi-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-042",
+      "name": "Foot Doctor Portatif Nasır Tıraş Aparatı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Taşınabilir nasır tıraş aparatı. Nasır ve sert derileri güvenle temizler.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0048-Portatif-Nasir-Tiras-Aparati-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-043",
+      "name": "Foot Doctor Portatif Nasır Tıraş Aparatı Jileti",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Nasır tıraş aparatı için yedek jilet. Keskin ve hijyenik.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0049-Portatif-Nasir-Tiras-Aparati-Jileti-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-044",
+      "name": "Foot Doctor Paslanmaz Çelik Gövdeli Zampara Kaplı Tırnak Törpüsü",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Paslanmaz çelik gövdeli profesyonel tırnak törpüsü. Uzun ömürlü ve hijyenik.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0050-Paslnmaz-Celik-Govdeli-Zimpara-Kapli-Tirnak-Torpusu-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-045",
+      "name": "Foot Doctor Tırnak Makası Seti 5,7 cm & 9 cm",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "İki farklı boyutta tırnak makası seti. El ve ayak tırnakları için ideal.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0051-Tirnak-Makasi-Seti-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-046",
+      "name": "Foot Doctor Tırnak Makası Seti 6,5 cm & 8,1 cm",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Alternatif boyutlarda tırnak makası seti. Profesyonel kesim kalitesi.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0052-Tirnak-Makasi-Seti-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-047",
+      "name": "Foot Doctor Ayak Pudrası",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Mentol içeren antiperspirant formülü sayesinde ayaklardaki terlemeyi ve kokuyu kontrol eder.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0052A-Koku-Giderici-Ayak-Pudrasi-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-048",
+      "name": "Foot Doctor Ayak Deodorantı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Koku giderici ayak spreyi. Antiperspirant formülü ile uzun süre ferahlık sağlar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0065-Ayak-Deodoranti-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-049",
+      "name": "Foot Doctor Ayakkabı Deodorantı",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Ayakkabılardaki kötü kokuları gideren sprey. Ayakkabılarınız her zaman taze kokar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0066-Ayakkabi-Deodoranti-640x640.jpg.webp"
+    },
+    {
+      "id": "fd-050",
+      "name": "Foot Doctor Topuk Çatlak Giderici Pet",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Topuk çatlaklarını gidermek için özel formüllü pet. Yumuşak ve sağlıklı topuklar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2024/09/Foot-DOCTOR-FD.0067-Topuk-Catlak-Giderici-Pet-640x671.jpg.webp"
+    },
+    {
+      "id": "fd-051",
+      "name": "Foot Doctor Çekiç Parmak Desteği",
+      "brandId": "br-foot-doctor",
+      "category": "Ayak Sağlığı",
+      "description": "Çekiç parmak rahatsızlığına özel destek ürünü. Parmağı doğru pozisyonda tutar.",
+      "image": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/Foot-DR-Cekic-Parmak-Destegi-640x640.jpg.webp"
+    },
+    {
+      "id": "5399c126-1631-4914-a658-ba8e4d537d54",
+      "name": "muakkeds",
+      "brandId": "br-4",
+      "category": "erkan",
+      "description": "muakddesin mıaı",
+      "image": "/uploads/products/1766935737919-logoyeni.png",
+      "price": "",
+      "stock": ""
     }
   ],
   "brands": [
@@ -794,7 +1172,7 @@
       "id": "br-cire",
       "name": "Cire Aseptine",
       "description": "100 yıla yakın tecrübesiyle cildinizin koruyucu kalkanı.",
-      "logo": "https://anthemiscosmetics.com/wp-content/uploads/2022/04/cire-aseptine-yeni-logo-640x640.jpg"
+      "logo": "/uploads/brands/1766916674862-cire.png"
     },
     {
       "id": "br-1",
@@ -821,10 +1199,48 @@
       "logo": "/images/brands/pharmanature-logo.png"
     },
     {
-      "id": "b1766875029354",
-      "name": "sklnmadk",
-      "description": "asdalmkskklkldakkladlk",
+      "id": "b1766913047471",
+      "name": "Farmavis",
+      "description": "pokıjuhygtfrdfyu",
       "logo": "https://placehold.co/200x100?text=Brand+Logo"
+    },
+    {
+      "id": "br-foot-doctor",
+      "name": "Foot Doctor",
+      "description": "Ayak sağlığı ve bakımı için profesyonel çözümler sunan lider marka. Pedikür ürünleri, koruyucu pedler, deodorantlar ve ayak bakım ürünleri.",
+      "logo": "https://anthemiscosmetics.com/wp-content/uploads/2024/06/logo-foot-doctor.png"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1766912104649",
+      "name": "Şakir Enes Kuvvetliışık",
+      "email": "sakirenes017@gmail.com",
+      "phone": "+905459043482",
+      "subject": "bayilik",
+      "subjectLabel": "Bayilik Başvurusu",
+      "message": "öpooooooooooo",
+      "date": "2025-12-28T08:55:04.649Z",
+      "read": true
+    },
+    {
+      "id": "msg-1766935814168",
+      "name": "fsmaslf",
+      "email": "ertemk24@gmail.com",
+      "phone": "0 (552) 660 40 48",
+      "subject": "sikayet",
+      "subjectLabel": "Şikayet / Öneri",
+      "message": "mlşaflasmlşfamlşfapşml",
+      "date": "2025-12-28T15:30:14.168Z",
+      "read": true
+    }
+  ],
+  "sliders": [
+    {
+      "id": "slider-1766940868415",
+      "image": "/uploads/sliders/1766940868381-Gemini_Generated_Image_61m20x61m20x61m2.png",
+      "order": 1,
+      "active": true
     }
   ]
 }

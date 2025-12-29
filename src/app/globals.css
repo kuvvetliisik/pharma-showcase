@@ -2,15 +2,30 @@
 
 @theme {
   --font-sans: var(--font-inter);
-  --color-primary-50: #f0f9ff;
-  --color-primary-100: #e0f2fe;
-  --color-primary-500: #0ea5e9;
-  --color-primary-600: #0284c7;
-  --color-primary-700: #0369a1;
+  
+  /* Farmavis Purple - Ana Renk */
+  --color-primary-50: #faf5ff;
+  --color-primary-100: #f3e8ff;
+  --color-primary-200: #e9d5ff;
+  --color-primary-300: #d8b4fe;
+  --color-primary-400: #c084fc;
+  --color-primary-500: #7c3aed;
+  --color-primary-600: #6b21a8;
+  --color-primary-700: #581c87;
+  --color-primary-800: #4a1772;
+  --color-primary-900: #3b0d60;
 
-  --color-secondary-50: #ecfdf5;
-  --color-secondary-500: #10b981;
-  --color-secondary-600: #059669;
+  /* Farmavis Teal - Vurgu Renk */
+  --color-secondary-50: #f0fdfa;
+  --color-secondary-100: #ccfbf1;
+  --color-secondary-200: #99f6e4;
+  --color-secondary-300: #5eead4;
+  --color-secondary-400: #2dd4bf;
+  --color-secondary-500: #14b8a6;
+  --color-secondary-600: #0d9488;
+  --color-secondary-700: #0f766e;
+  --color-secondary-800: #115e59;
+  --color-secondary-900: #134e4a;
 }
 
 /* Custom Utilities */
@@ -28,6 +43,21 @@ html {
 
 body {
   @apply bg-slate-50 text-slate-900;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 bg-clip-text text-transparent;
+}
+
+/* Premium Button Gradient */
+.btn-gradient {
+  @apply bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-all duration-300;
+}
+
+/* Teal Accent Button */
+.btn-teal {
+  @apply bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white shadow-lg shadow-secondary-500/25 hover:shadow-secondary-500/40 transition-all duration-300;
 }
 
 @keyframes blob {
@@ -58,4 +88,20 @@ body {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+/* Shimmer Effect for Loading */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
 }

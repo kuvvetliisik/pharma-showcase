@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import {
     Search,
     Trash2,
@@ -8,74 +8,53 @@ import {
     MailOpen,
     CheckCircle2,
     Clock,
-    MoreVertical
+    Loader2,
+    RefreshCw,
+    Inbox
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { toast } from "sonner";
 
-// Mock Data
-const initialMessages = [
-    {
-        id: "msg-1",
-        name: "Ahmet Yılmaz",
-        email: "ahmet@ornek.com",
-        phone: "0532 555 12 34",
-        subject: "bayilik",
-        subjectLabel: "Bayilik Başvurusu",
-        message: "Merhaba, İstanbul Anadolu yakasında yeni açacağım eczane için bayilik şartlarınızı öğrenmek istiyorum. Dönüş yaparsanız sevinirim.",
-        date: "2 saat önce",
-        read: false,
-    },
-    {
-        id: "msg-2",
-        name: "Ayşe Kaya",
-        email: "ayse@eczane.com",
-        phone: "0555 123 45 67",
-        subject: "urun-bilgisi",
-        subjectLabel: "Ürün Bilgisi Talebi",
-        message: "Cire Aseptine ürünlerinizin toplu alım fiyat listesini gönderebilir misiniz? Özellikle güneş kremleri ile ilgileniyoruz.",
-        date: "Dün",
-        read: true,
-    },
-    {
-        id: "msg-3",
-        name: "Mehmet Demir",
-        email: "mehmet@mail.com",
-        phone: "0505 987 65 43",
-        subject: "genel",
-        subjectLabel: "Genel Bilgi",
-        message: "Web sitenizdeki bazı ürün görselleri yüklenmiyor, bilgi vermek istedim.",
-        date: "2 gün önce",
-        read: true,
-    },
-    {
-        id: "msg-4",
-        name: "Zeynep Çelik",
-        email: "zeynep@celik.com",
-        phone: "0544 333 22 11",
-        subject: "sikayet",
-        subjectLabel: "Şikayet / Öneri",
-        message: "Geçen hafta verdiğim siparişin kargosu hala ulaşmadı. Konuyla ilgili acil destek bekliyorum.",
-        date: "3 gün önce",
-        read: false,
-    },
-    {
-        id: "msg-5",
-        name: "Caner Erkin",
-        email: "caner@gs.com",
-        phone: "0533 444 55 66",
-        subject: "bayilik",
-        subjectLabel: "Bayilik Başvurusu",
-        message: "İzmir bölgesinde dağıtım ağınıza katılmak istiyoruz. Detayları görüşmek için randevu talep ediyorum.",
-        date: "1 hafta önce",
-        read: true,
-    }
-];
+interface Message {
+    id: string;
+    name: string;
+    email: string;
+    phone: string;
+    subject: string;
+    subjectLabel: string;
+    message: string;
+    date: string;
+    read: boolean;
+}
 
 export default function AdminMessagesPage() {
-    const [messages, setMessages] = useState(initialMessages);
+    const [messages, setMessages] = useState<Message[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
     const [filter, setFilter] = useState<"all" | "unread">("all");
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedMessageId, setSelectedMessageId] = useState<string | null>(null);
+
+    const fetchMessages = useCallback(async () => {
+        try {
+            setIsLoading(true);
+            const response = await fetch(`/api/messages?t=${Date.now()}`);
+            if (response.ok) {
+                const data = await response.json();
+                setMessages(data);
+            } else {
+                toast.error("Mesajlar yüklenemedi.");
+            }
+        } catch (error) {
+            console.error(error);
+            toast.error("Sunucu hatası.");
+        } finally {
+            setIsLoading(false);
+        }
+    }, []);
+
+    useEffect(() => {
+        fetchMessages();
+    }, [fetchMessages]);
 
     // Filter messages
     const filteredMessages = messages.filter(msg => {
@@ -88,25 +67,53 @@ export default function AdminMessagesPage() {
 
     const unreadCount = messages.filter(m => !m.read).length;
 
-    const handleDelete = (id: string, e: React.MouseEvent) => {
-        e.stopPropagation();
-        if (confirm("Bu mesajı silmek istediğinize emin misiniz?")) {
-            setMessages(prev => prev.filter(m => m.id !== id));
-            if (selectedMessageId === id) setSelectedMessageId(null);
+    const handleDelete = async (id: string, e?: React.MouseEvent) => {
+        if (e) e.stopPropagation();
+
+        try {
+            const response = await fetch(`/api/messages/${id}`, {
+                method: 'DELETE',
+            });
+
+            if (response.ok) {
+                toast.success("Mesaj silindi.");
+                setMessages(prev => prev.filter(m => m.id !== id));
+                if (selectedMessageId === id) setSelectedMessageId(null);
+            } else {
+                toast.error("Silinemedi.");
+            }
+        } catch (error) {
+            toast.error("Bir hata oluştu.");
         }
     };
 
-    const handleToggleRead = (id: string, e?: React.MouseEvent) => {
+    const handleToggleRead = async (id: string, e?: React.MouseEvent) => {
         if (e) e.stopPropagation();
-        setMessages(prev => prev.map(m => m.id === id ? { ...m, read: !m.read } : m));
+
+        const message = messages.find(m => m.id === id);
+        if (!message) return;
+
+        try {
+            const response = await fetch(`/api/messages/${id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ read: !message.read }),
+            });
+
+            if (response.ok) {
+                setMessages(prev => prev.map(m => m.id === id ? { ...m, read: !m.read } : m));
+            }
+        } catch (error) {
+            console.error("Toggle read error:", error);
+        }
     };
 
-    const handleSelectMessage = (id: string) => {
+    const handleSelectMessage = async (id: string) => {
         setSelectedMessageId(id);
         // Mark as read when opened
         const msg = messages.find(m => m.id === id);
         if (msg && !msg.read) {
-            handleToggleRead(id);
+            await handleToggleRead(id);
         }
     };
 
@@ -121,6 +128,20 @@ export default function AdminMessagesPage() {
         }
     };
 
+    const formatDate = (dateString: string) => {
+        const date = new Date(dateString);
+        const now = new Date();
+        const diffMs = now.getTime() - date.getTime();
+        const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+        const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+        if (diffHours < 1) return "Az önce";
+        if (diffHours < 24) return `${diffHours} saat önce`;
+        if (diffDays === 1) return "Dün";
+        if (diffDays < 7) return `${diffDays} gün önce`;
+        return date.toLocaleDateString('tr-TR');
+    };
+
     return (
         <div className="h-[calc(100vh-8rem)] flex flex-col space-y-4">
             <div className="flex items-center justify-between">
@@ -128,19 +149,28 @@ export default function AdminMessagesPage() {
                     <h1 className="text-2xl font-bold text-slate-800">Mesajlar</h1>
                     <p className="text-slate-500">Gelen kutusu ({unreadCount} okunmamış)</p>
                 </div>
-                <div className="flex bg-white rounded-lg p-1 border border-slate-200">
+                <div className="flex items-center gap-3">
                     <button
-                        onClick={() => setFilter("all")}
-                        className={cn("px-4 py-1.5 text-sm font-medium rounded-md transition-all", filter === "all" ? "bg-slate-100 text-slate-900" : "text-slate-500 hover:text-slate-700")}
+                        onClick={fetchMessages}
+                        className="p-2 text-slate-600 hover:bg-slate-100 rounded-lg border border-slate-200 transition-colors"
+                        title="Yenile"
                     >
-                        Tümü
+                        <RefreshCw size={18} />
                     </button>
-                    <button
-                        onClick={() => setFilter("unread")}
-                        className={cn("px-4 py-1.5 text-sm font-medium rounded-md transition-all", filter === "unread" ? "bg-slate-100 text-slate-900" : "text-slate-500 hover:text-slate-700")}
-                    >
-                        Okunmamış
-                    </button>
+                    <div className="flex bg-white rounded-lg p-1 border border-slate-200">
+                        <button
+                            onClick={() => setFilter("all")}
+                            className={cn("px-4 py-1.5 text-sm font-medium rounded-md transition-all", filter === "all" ? "bg-slate-100 text-slate-900" : "text-slate-500 hover:text-slate-700")}
+                        >
+                            Tümü
+                        </button>
+                        <button
+                            onClick={() => setFilter("unread")}
+                            className={cn("px-4 py-1.5 text-sm font-medium rounded-md transition-all", filter === "unread" ? "bg-slate-100 text-slate-900" : "text-slate-500 hover:text-slate-700")}
+                        >
+                            Okunmamış
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -161,7 +191,12 @@ export default function AdminMessagesPage() {
                     </div>
 
                     <div className="flex-1 overflow-y-auto divide-y divide-slate-100">
-                        {filteredMessages.length > 0 ? (
+                        {isLoading ? (
+                            <div className="flex flex-col items-center justify-center p-12 text-slate-400">
+                                <Loader2 size={24} className="animate-spin mb-2" />
+                                <p className="text-sm">Yükleniyor...</p>
+                            </div>
+                        ) : filteredMessages.length > 0 ? (
                             filteredMessages.map((msg) => (
                                 <div
                                     key={msg.id}
@@ -176,7 +211,7 @@ export default function AdminMessagesPage() {
                                         <h4 className={cn("text-sm text-slate-900 truncate pr-2", !msg.read ? "font-bold" : "font-medium")}>
                                             {msg.name}
                                         </h4>
-                                        <span className="text-xs text-slate-500 whitespace-nowrap">{msg.date}</span>
+                                        <span className="text-xs text-slate-500 whitespace-nowrap">{formatDate(msg.date)}</span>
                                     </div>
                                     <p className="text-xs text-slate-600 mb-2 truncate">{msg.subjectLabel}</p>
                                     <p className="text-xs text-slate-500 line-clamp-2">{msg.message}</p>
@@ -205,7 +240,13 @@ export default function AdminMessagesPage() {
                             ))
                         ) : (
                             <div className="p-8 text-center text-slate-500 text-sm">
-                                Mesaj bulunamadı.
+                                <Inbox size={32} className="mx-auto mb-3 text-slate-300" />
+                                <p>Mesaj bulunamadı.</p>
+                                {searchQuery && (
+                                    <button onClick={() => setSearchQuery("")} className="text-primary-600 hover:underline mt-2">
+                                        Aramayı temizle
+                                    </button>
+                                )}
                             </div>
                         )}
                     </div>
@@ -222,14 +263,14 @@ export default function AdminMessagesPage() {
                                         onClick={() => setSelectedMessageId(null)}
                                         className="md:hidden text-slate-500 hover:text-slate-800 mb-4 flex items-center gap-1 text-sm"
                                     >
-                                        &larr; Geri Dön
+                                        ← Geri Dön
                                     </button>
                                     <div className="flex items-center gap-3 mb-2">
                                         <span className={cn("px-2.5 py-0.5 rounded-full text-xs font-medium", getSubjectColor(selectedMessage.subject))}>
                                             {selectedMessage.subjectLabel}
                                         </span>
                                         <span className="text-xs text-slate-400 flex items-center gap-1">
-                                            <Clock size={12} /> {selectedMessage.date}
+                                            <Clock size={12} /> {formatDate(selectedMessage.date)}
                                         </span>
                                     </div>
                                     <h2 className="text-xl font-bold text-slate-900 mb-1">{selectedMessage.subjectLabel} <span className="text-slate-400 font-normal text-base">konulu mesaj</span></h2>
@@ -237,9 +278,11 @@ export default function AdminMessagesPage() {
                                         <span className="font-semibold text-slate-900">{selectedMessage.name}</span>
                                         <span>&lt;{selectedMessage.email}&gt;</span>
                                     </div>
-                                    <div className="text-sm text-slate-500 mt-1">
-                                        Tel: <span className="font-mono text-slate-600">{selectedMessage.phone}</span>
-                                    </div>
+                                    {selectedMessage.phone && (
+                                        <div className="text-sm text-slate-500 mt-1">
+                                            Tel: <span className="font-mono text-slate-600">{selectedMessage.phone}</span>
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="flex gap-2">
                                     <button
@@ -264,17 +307,23 @@ export default function AdminMessagesPage() {
                                 {selectedMessage.message}
                             </div>
 
-                            {/* Detail Footer (Reply) */}
+                            {/* Detail Footer */}
                             <div className="p-6 border-t border-slate-100 bg-slate-50 mt-auto">
-                                <h4 className="text-sm font-semibold text-slate-900 mb-3">Hızlı Cevap Ver</h4>
+                                <h4 className="text-sm font-semibold text-slate-900 mb-3">Hızlı İşlemler</h4>
                                 <div className="flex gap-3">
-                                    <button className="flex-1 bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-lg text-sm hover:border-primary-300 hover:text-primary-700 transition-colors text-left flex items-center gap-2">
+                                    <a
+                                        href={`mailto:${selectedMessage.email}?subject=Re: ${selectedMessage.subjectLabel}`}
+                                        className="flex-1 bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-lg text-sm hover:border-primary-300 hover:text-primary-700 transition-colors text-center flex items-center justify-center gap-2"
+                                    >
                                         <Mail size={16} />
                                         E-posta ile yanıtla
-                                    </button>
-                                    <button className="flex-1 bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-lg text-sm hover:border-green-300 hover:text-green-700 transition-colors text-left flex items-center gap-2">
+                                    </a>
+                                    <button
+                                        onClick={() => handleToggleRead(selectedMessage.id)}
+                                        className="flex-1 bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-lg text-sm hover:border-green-300 hover:text-green-700 transition-colors flex items-center justify-center gap-2"
+                                    >
                                         <CheckCircle2 size={16} />
-                                        İşleme alındı olarak işaretle
+                                        {selectedMessage.read ? "Okunmadı işaretle" : "Okundu işaretle"}
                                     </button>
                                 </div>
                             </div>

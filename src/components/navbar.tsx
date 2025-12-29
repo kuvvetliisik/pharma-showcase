@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState, useEffect, useMemo } from "react";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
-import { brands } from "@/lib/data";
 import { Button } from "@/components/button";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
@@ -18,6 +17,13 @@ interface Product {
     image: string;
 }
 
+interface Brand {
+    id: string;
+    name: string;
+    description: string;
+    logo: string;
+}
+
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isBrandsOpen, setIsBrandsOpen] = useState(false);
@@ -26,22 +32,32 @@ export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
 
-    // Fetch products from API for dynamic categories
+    // Fetch products and brands from API
     const [products, setProducts] = useState<Product[]>([]);
+    const [brands, setBrands] = useState<Brand[]>([]);
 
     useEffect(() => {
-        const fetchProducts = async () => {
+        const fetchData = async () => {
             try {
-                const res = await fetch(`/api/products?t=${Date.now()}`);
-                if (res.ok) {
-                    const data = await res.json();
-                    setProducts(data);
+                const [productsRes, brandsRes] = await Promise.all([
+                    fetch(`/api/products?t=${Date.now()}`),
+                    fetch(`/api/brands?t=${Date.now()}`)
+                ]);
+
+                if (productsRes.ok) {
+                    const productsData = await productsRes.json();
+                    setProducts(productsData);
+                }
+
+                if (brandsRes.ok) {
+                    const brandsData = await brandsRes.json();
+                    setBrands(brandsData);
                 }
             } catch (error) {
-                console.error("Failed to fetch products for navbar:", error);
+                console.error("Failed to fetch data for navbar:", error);
             }
         };
-        fetchProducts();
+        fetchData();
     }, []);
 
     useEffect(() => {
@@ -69,8 +85,10 @@ export function Navbar() {
     return (
         <nav
             className={cn(
-                "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
-                scrolled || isBrandsOpen ? "bg-white/95 backdrop-blur-md shadow-sm border-slate-200/60 py-2" : "bg-transparent py-4 text-slate-800"
+                "fixed top-0 w-full z-50 transition-all duration-300 border-b",
+                scrolled || isBrandsOpen
+                    ? "bg-white/95 backdrop-blur-md shadow-sm border-slate-200/60"
+                    : "bg-white/80 backdrop-blur-sm border-transparent"
             )}
             onMouseLeave={() => {
                 setIsBrandsOpen(false);
@@ -79,14 +97,18 @@ export function Navbar() {
             }}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-between items-center h-20">
 
                     {/* LEFT SECTION: Logo + Navigation Links */}
                     <div className="flex items-center gap-10">
                         {/* Logo */}
                         <div className="flex-shrink-0 flex items-center z-50">
-                            <Link href="/" className="text-2xl font-bold text-primary-600 tracking-tight">
-                                Ecza<span className={cn("transition-colors", (scrolled || isBrandsOpen) ? "text-slate-900" : "text-slate-800")}>Deposu</span>
+                            <Link href="/" className="block">
+                                <img
+                                    src="/logo.png"
+                                    alt="Farmavis"
+                                    className="h-[160px] w-auto"
+                                />
                             </Link>
                         </div>
 
@@ -210,6 +232,18 @@ export function Navbar() {
                             </Link>
 
                             <Link
+                                href="/about"
+                                className={cn(
+                                    "px-4 py-2 rounded-full text-sm font-medium transition-all",
+                                    pathname === "/about"
+                                        ? "bg-primary-50 text-primary-700"
+                                        : "text-slate-600 hover:text-primary-600 hover:bg-slate-50/50"
+                                )}
+                            >
+                                Hakkımızda
+                            </Link>
+
+                            <Link
                                 href="/contact"
                                 className={cn(
                                     "px-4 py-2 rounded-full text-sm font-medium transition-all",
@@ -276,6 +310,14 @@ export function Navbar() {
                                 onClick={() => setIsOpen(false)}
                             >
                                 Ürünler
+                            </Link>
+
+                            <Link
+                                href="/about"
+                                className="block px-4 py-3 text-base font-medium text-slate-700 hover:text-primary-600 hover:bg-slate-50 rounded-lg transition-colors"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Hakkımızda
                             </Link>
 
                             <div className="pt-4">
